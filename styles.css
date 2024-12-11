@@ -4,18 +4,18 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f7f7f7; /* Fondo más suave */
     color: #333;
     transition: background-color 0.3s ease-in-out;
 }
 
 body:hover {
-    background-color: #e9e9e9;
+    background-color: #e1f7e1; /* Un tono suave que da frescura */
 }
 
 /* Encabezado */
 header {
-    background: #4CAF50;
+    background: #ff6f61; /* Color cálido, más llamativo */
     color: white;
     text-align: center;
     padding: 1.5rem 0;
@@ -47,14 +47,15 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 1.5rem;
     display: block;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background: #555;
+    background: #ff6f61; /* Cambiar a un color más cálido para el hover */
+    color: #fff;
 }
 
 /* Secciones */
@@ -62,21 +63,21 @@ section {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
-    background: white;
-    margin-bottom: 1rem;
+    background: #ffffff; /* Fondo blanco más limpio */
+    margin-bottom: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 section h2 {
     text-align: center;
-    color: #4CAF50;
+    color: #ff6f61; /* Color llamativo para los encabezados */
     margin-bottom: 1rem;
 }
 
@@ -95,14 +96,14 @@ section h2 {
 }
 
 .project a {
-    color: #4CAF50;
+    color: #ff6f61; /* Color llamativo para los enlaces */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .project a:hover {
-    color: #3d8b40;
+    color: #ff3b2a; /* Un tono más oscuro cuando se pasa el mouse */
     text-decoration: underline;
 }
 
@@ -119,7 +120,7 @@ section h2 {
 }
 
 .project .links a:hover {
-    color: #4CAF50;
+    color: #ff6f61; /* Enlaces dentro de proyectos también en color llamativo */
 }
 
 /* Lista de habilidades */
@@ -167,4 +168,3 @@ footer {
         margin: 5px 0;
     }
 }
-
