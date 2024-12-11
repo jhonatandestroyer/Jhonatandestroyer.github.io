@@ -6,6 +6,185 @@
     <meta name="description" content="Portfolio de un desarrollador Unity Junior">
     <title>Portfolio | Unity Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #1A1A2E;
+            color: #EAEAEA;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        /* Encabezado */
+        header {
+            background: #16213E;
+            color: #EAEAEA;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Navegación */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            background: #0F3460;
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #EAEAEA;
+            padding: 0.8rem 1.5rem;
+            display: block;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #53354A;
+        }
+
+        /* Secciones */
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 1rem auto;
+            background: #0F3460;
+            color: #EAEAEA;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            text-align: center;
+            color: #F39C12;
+            margin-bottom: 1rem;
+        }
+
+        /* Proyectos */
+        .project {
+            margin-bottom: 1.5rem;
+        }
+
+        .project h3 {
+            color: #EAEAEA;
+            margin: 0;
+        }
+
+        .project p {
+            margin: 0.5rem 0;
+        }
+
+        .project a {
+            color: #F39C12;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .project a:hover {
+            color: #F1C40F;
+            text-decoration: underline;
+        }
+
+        .project a:visited {
+            color: #F39C12; /* Mantén el mismo color que los enlaces normales */
+        }
+
+        .project .links {
+            margin-top: 0.5rem;
+        }
+
+        .project .links a {
+            margin-right: 10px;
+            color: #EAEAEA;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project .links a:hover {
+            color: #F39C12;
+        }
+
+        /* Imagen del proyecto */
+        .itchio-logo {
+            max-width: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        /* Lista de habilidades */
+        ul {
+            list-style: square;
+            padding-left: 1.5rem;
+            color: #EAEAEA;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #16213E;
+            color: #EAEAEA;
+            margin-top: 1rem;
+            border-radius: 0 0 8px 8px;
+        }
+
+        /* Diseño móvil */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li a {
+                text-align: center;
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            .project {
+                text-align: center;
+            }
+
+            .project .links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project .links a {
+                margin: 5px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,7 +203,7 @@
 
     <section id="about">
         <h2>Acerca de mí</h2>
-        <img src="Imagen de WhatsApp 2024-12-11 a las 10.29.49_4782e128.jpg" alt="Foto de Jhonatan David Montañez Espitia" style="max-width: 200px; border-radius: 50%; margin-bottom: 20px;">
+        <img src="Imagen.jpg" alt="Foto de Jhonatan David Montañez Espitia" style="max-width: 200px; border-radius: 50%; margin-bottom: 20px;">
         <p>Soy un desarrollador apasionado que comenzó su camino en el desarrollo de videojuegos creando proyectos personales y colaborativos en Unity. Mi meta es contribuir a la creación de juegos innovadores y emocionantes.</p>
         <p>Estoy constantemente aprendiendo nuevas tecnologías y mejorando mis habilidades para superar desafíos en el desarrollo de juegos.</p>
     </section>
@@ -33,22 +212,11 @@
         <h2>Proyectos</h2>
         <div class="project">
             <h3>Proyecto 1: For Life</h3>
-            <p>Características clave del juego:</p>
-            <ul>
-                <li>Escape frenético: Corre, salta y esquiva mientras la calabaza crece más y más, convirtiéndose en una amenaza aún mayor.</li>
-                <li>Niveles dinámicos: El barrio cambia con cada paso, con nuevos desafíos y obstáculos que se presentan a medida que la calabaza sigue el rastro de Tomás.</li>
-                <li>Interacción con el entorno: Usa objetos del entorno para crear barreras, distraer a la calabaza o encontrar puntos de escape.</li>
-                <li>Modo de historia y desafíos: Disfruta de una narrativa intrigante o desafía tus habilidades con modos de supervivencia, donde debes correr lo más lejos posible antes de ser alcanzado.</li>
-            </ul>
-            <p>El objetivo es simple: ¡escapar de la calabaza y desentrañar el misterio detrás de su extraño crecimiento!</p>
-
-            <!-- Enlace con imagen al lado -->
-            <a href="https://ana-vg.itch.io/for-life" target="_blank" class="itch-link">
-                <img src="itch-io-icon-1024x1024-fev9qpvd.png" alt="Itch.io" class="itchio-logo">
-                Ver en Itch.io
+            <p>Un emocionante juego de supervivencia y exploración.</p>
+            <a href="https://ana-vg.itch.io/for-life" target="_blank">
+                <img src="itch-io-icon-1024x1024-fev9qpvd.png" alt="Itch.io" class="itchio-logo"> Ver en Itch.io
             </a>
         </div>
-
         <div class="project">
             <h3>Aventuras en 3D</h3>
             <p>Un proyecto en Unity con mecánicas de combate y exploración en un mundo abierto.</p>
@@ -70,7 +238,7 @@
     <section id="contact">
         <h2>Contacto</h2>
         <p>Email: <a href="mailto:jhonatanmontanez05@gmail.com">jhonatanmontanez05@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/jhonatan-montañez-espitia-ba51bb264/" target="_blank">[Jhonatan David Montañez Espitia]</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jhonatan-montañez-espitia-ba51bb264/" target="_blank">Jhonatan David Montañez Espitia</a></p>
         <p>GitHub: <a href="https://github.com/jhonatandestroyer" target="_blank">jhonatandestroyer</a></p>
     </section>
 
