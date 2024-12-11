@@ -63,7 +63,7 @@ section {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
-    background: transparent; /* Fondo transparente para no cambiar las secciones */
+    background: #1A252F; /* Fondo oscuro en las secciones */
     color: #ECF0F1; /* Texto claro para contraste */
     margin-bottom: 1rem;
     border-radius: 8px;
@@ -83,3 +83,119 @@ section h2 {
 }
 
 /* Proyectos */
+.project {
+    margin-bottom: 1.5rem;
+}
+
+.project h3 {
+    color: #F39C12; /* Dorado en los títulos de proyectos */
+    margin: 0;
+}
+
+.project p {
+    margin: 0.5rem 0;
+}
+
+.project a {
+    color: #F39C12; /* Color dorado para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #F1C40F; /* Color amarillo para el hover */
+    text-decoration: underline;
+}
+
+.project .links {
+    margin-top: 0.5rem;
+}
+
+.project .links a {
+    margin-right: 10px;
+    color: #ECF0F1;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project .links a:hover {
+    color: #F39C12; /* Dorado en los enlaces secundarios al hover */
+}
+
+/* Lista de habilidades */
+ul {
+    list-style: square;
+    padding-left: 1.5rem;
+    color: #ECF0F1;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2C3E50; /* Fondo oscuro en el pie de página */
+    color: #ECF0F1; /* Texto claro */
+    margin-top: 1rem;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Diseño móvil */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .project {
+        text-align: center;
+    }
+
+    .project .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project .links a {
+        margin: 5px 0;
+    }
+}
+
+/* Estilo del enlace con la imagen de Itch.io */
+.itch-link {
+    display: inline-flex;
+    align-items: center;
+    color: #F39C12; /* Dorado en el enlace */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.itchio-logo {
+    width: 20px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.itch-link:hover {
+    color: #F1C40F; /* Color más brillante al hacer hover */
+    text-decoration: underline;
+}
+
+/* Ajuste de la imagen en el apartado "Acerca de mí" */
+#about img {
+    max-width: 150px; /* Limita el tamaño máximo de la imagen */
+    width: 100%; /* Asegura que se ajuste dentro del contenedor */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
