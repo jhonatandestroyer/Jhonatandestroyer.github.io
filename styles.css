@@ -167,4 +167,12 @@ footer {
     .project .links a {
         margin: 5px 0;
     }
+
+    /* Estilos para la imagen de Itch.io */
+.itchio-logo {
+    width: 20px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    vertical-align: middle; /* Alinea la imagen con el texto */
+}
 }
