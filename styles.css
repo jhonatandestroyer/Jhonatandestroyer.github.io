@@ -95,6 +95,25 @@ section h2 {
     margin: 0.5rem 0;
 }
 
+/* Enlace con imagen al lado */
+.itch-link {
+    display: inline-flex; /* Para alinear la imagen y el texto en línea */
+    align-items: center;  /* Centrar la imagen y el texto */
+    color: #F39C12;       /* Color dorado para el enlace */
+    text-decoration: none;
+}
+
+.itch-icon {
+    width: 20px;  /* Tamaño de la imagen */
+    height: auto; /* Mantener la proporción */
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+
+.itch-link:hover {
+    color: #F1C40F; /* Efecto de hover */
+    text-decoration: underline;
+}
+
 .project a {
     color: #F39C12; /* Color dorado para los enlaces */
     text-decoration: none;
