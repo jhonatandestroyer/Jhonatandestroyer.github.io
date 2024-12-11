@@ -36,11 +36,10 @@ header p {
     margin-top: 0.5rem;
 }
 
-/* Navegación */
 nav ul {
     display: flex;
     justify-content: center;
-    background: #2C3E50; /* Fondo oscuro de navegación */
+    background: #2C3E50;
     padding: 0;
     list-style: none;
     margin: 0;
@@ -51,7 +50,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ECF0F1; /* Texto claro en los enlaces */
+    color: #ECF0F1;
     padding: 0.8rem 1.5rem;
     display: block;
     text-decoration: none;
@@ -59,8 +58,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #34495E; /* Fondo más claro al pasar el mouse */
-    color: #F39C12; /* Color dorado para el texto al hacer hover */
+    background: #34495E;
+    color: #F39C12;
 }
 
 /* Secciones */
@@ -68,8 +67,8 @@ section {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
-    background: #1A252F; /* Fondo oscuro en las secciones */
-    color: #ECF0F1; /* Texto claro para contraste */
+    background: #1A252F;
+    color: #ECF0F1;
     margin-bottom: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -83,7 +82,7 @@ section:hover {
 
 section h2 {
     text-align: center;
-    color: #F39C12; /* Un tono dorado para los encabezados */
+    color: #F39C12;
     margin-bottom: 1rem;
 }
 
@@ -93,7 +92,7 @@ section h2 {
 }
 
 .project h3 {
-    color: #F39C12; /* Dorado en los títulos de proyectos */
+    color: #F39C12;
     margin: 0;
 }
 
@@ -102,14 +101,13 @@ section h2 {
 }
 
 .project a {
-    color: #F39C12; /* Color dorado para los enlaces */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+.project a:visited {
+    color: #FFFFFF;
+}
 }
 
 .project a:hover {
-    color: #F1C40F; /* Color amarillo para el hover */
+    color: #F1C40F;
     text-decoration: underline;
 }
 
