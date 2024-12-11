@@ -101,7 +101,8 @@ section h2 {
 }
 
 .project a {
-    color: #FFFFFF; /* Asegura que el enlace sea blanco */
+    color: #FFFFFF !important;  /* Asegura que todos los enlaces sean blancos */
+    text-decoration: none;
 }
 
 .project a:visited {
@@ -109,7 +110,7 @@ section h2 {
 }
 
 .project a:hover {
-    color: #F1C40F;
+    color: #F39C12;
     text-decoration: underline;
 }
 
