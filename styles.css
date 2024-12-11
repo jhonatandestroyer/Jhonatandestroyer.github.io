@@ -4,19 +4,19 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #2C3E50; /* Fondo oscuro principal */
+    color: #ECF0F1; /* Texto claro para un buen contraste */
     transition: background-color 0.3s ease-in-out;
 }
 
 body:hover {
-    background-color: #e9e9e9;
+    background-color: #34495E; /* Cambio sutil de fondo al pasar el mouse */
 }
 
 /* Encabezado */
 header {
-    background: #3A6E45; /* Color más oscuro para el encabezado */
-    color: white;
+    background: #1A252F; /* Fondo aún más oscuro para el encabezado */
+    color: #F39C12; /* Dorado para destacar el texto */
     text-align: center;
     padding: 1.5rem 0;
 }
@@ -35,7 +35,7 @@ header p {
 nav ul {
     display: flex;
     justify-content: center;
-    background: #333;
+    background: #2C3E50; /* Fondo oscuro de navegación */
     padding: 0;
     list-style: none;
     margin: 0;
@@ -46,15 +46,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ECF0F1; /* Texto claro en los enlaces */
     padding: 0.8rem 1.5rem;
     display: block;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background: #555;
+    background: #34495E; /* Fondo más claro al pasar el mouse */
+    color: #F39C12; /* Color dorado para el texto al hacer hover */
 }
 
 /* Secciones */
@@ -62,8 +63,8 @@ section {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
-    background: #2C3E50; /* Fondo más oscuro */
-    color: #ECF0F1; /* Color de texto claro para contraste */
+    background: #34495E; /* Fondo más claro para las secciones */
+    color: #ECF0F1; /* Texto claro para contraste */
     margin-bottom: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -87,31 +88,12 @@ section h2 {
 }
 
 .project h3 {
-    color: #ECF0F1;
+    color: #F39C12; /* Dorado en los títulos de proyectos */
     margin: 0;
 }
 
 .project p {
     margin: 0.5rem 0;
-}
-
-/* Enlace con imagen al lado */
-.itch-link {
-    display: inline-flex; /* Para alinear la imagen y el texto en línea */
-    align-items: center;  /* Centrar la imagen y el texto */
-    color: #F39C12;       /* Color dorado para el enlace */
-    text-decoration: none;
-}
-
-.itch-icon {
-    width: 20px;  /* Tamaño de la imagen */
-    height: auto; /* Mantener la proporción */
-    margin-right: 8px; /* Espacio entre la imagen y el texto */
-}
-
-.itch-link:hover {
-    color: #F1C40F; /* Efecto de hover */
-    text-decoration: underline;
 }
 
 .project a {
@@ -122,7 +104,7 @@ section h2 {
 }
 
 .project a:hover {
-    color: #F1C40F;
+    color: #F1C40F; /* Color amarillo para el hover */
     text-decoration: underline;
 }
 
@@ -139,7 +121,7 @@ section h2 {
 }
 
 .project .links a:hover {
-    color: #F39C12;
+    color: #F39C12; /* Dorado en los enlaces secundarios al hover */
 }
 
 /* Lista de habilidades */
@@ -153,8 +135,8 @@ ul {
 footer {
     text-align: center;
     padding: 1rem;
-    background: #333;
-    color: white;
+    background: #2C3E50; /* Fondo oscuro en el pie de página */
+    color: #ECF0F1; /* Texto claro */
     margin-top: 1rem;
     border-radius: 0 0 8px 8px;
 }
@@ -187,4 +169,24 @@ footer {
     .project .links a {
         margin: 5px 0;
     }
+}
+
+/* Estilo del enlace con la imagen de Itch.io */
+.itch-link {
+    display: inline-flex;
+    align-items: center;
+    color: #F39C12; /* Dorado en el enlace */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.itchio-logo {
+    width: 20px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.itch-link:hover {
+    color: #F1C40F; /* Color más brillante al hacer hover */
+    text-decoration: underline;
 }
