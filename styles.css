@@ -101,9 +101,11 @@ section h2 {
 }
 
 .project a {
-.project a:visited {
-    color: #FFFFFF;
+    color: #FFFFFF; /* Asegura que el enlace sea blanco */
 }
+
+.project a:visited {
+    color: #FFFFFF; /* Asegura que los enlaces visitados sean blancos */
 }
 
 .project a:hover {
